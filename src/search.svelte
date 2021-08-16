@@ -1,16 +1,10 @@
-<script lang="ts">
+<script>
+  let value = "";
 
-  let value = ''
+  const handleInput = (event) => { value = event.target.value; };
 
-  const handleInput = (event) => 
-  value = event.target.value
+  console.log(value);
 
 </script>
 
-
-
-<input value={value} on:input={handleInput}>
-
-<style>
-	
-</style>
+<input {value} on:input={handleInput} />
